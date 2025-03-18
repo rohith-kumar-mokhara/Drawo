@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { Excalidraw } from "@excalidraw/excalidraw";
+import Whiteboard from "./components/Whiteboard";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    Hello!
-    </>
-  )
+    <div style={{ height: "100vh" }}>
+      <Whiteboard />
+    </div>
+  );
 }
 
-export default App
+export default App;
